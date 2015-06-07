@@ -1,0 +1,16 @@
+<ul>
+  {{#each graduate in model}}
+    <li>
+      {{#link-to 'graduate' graduate}}
+        {{graduate.firstName}} {{graduate.lastName}}
+        {{graduate.bio}}
+        
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No grads found.</li>
+  {{/each}}
+</ul>
+
+
+

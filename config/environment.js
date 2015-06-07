@@ -2,6 +2,17 @@
 
 module.exports = function(environment) {
   var ENV = {
+     contentSecurityPolicy: {
+      'connect-src': "'self' http://localhost:3000",
+      'default-src': "'none' http://localhost:3000",
+      'script-src': "'self' http://localhost:3000",
+      'font-src': "'self' http://localhost:3000",
+      'img-src': "'self' http://localhost:3000",
+      'style-src': "'self' http://localhost:3000 'unsafe-inline",
+      'media-src': "'self' http://localhost:3000"
+    },
+
+
     modulePrefix: 'flatbook-front',
     environment: environment,
     baseURL: '/',

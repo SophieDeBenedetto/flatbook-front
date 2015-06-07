@@ -5,11 +5,12 @@ export default DS.Model.extend({
   lastName: DS.attr('string'),
   cohort: DS.attr('string'),
   currentJob: DS.attr('string'),
-  bio: DS.attr('text'),
-  news: DS.attr('text').
+  bio: DS.attr('string'),
+  news: DS.attr('string'),
   website: DS.attr('string'),
   picture: DS.attr('string'),
   createdAt: DS.attr('date'),
   updatedAt: DS.attr('date')
 });
+
 
