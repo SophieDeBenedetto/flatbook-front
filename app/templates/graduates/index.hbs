@@ -1,10 +1,8 @@
 <ul>
   {{#each graduate in model}}
-    <li>
+    <li class="testing">
       {{#link-to 'graduate' graduate}}
-        {{graduate.firstName}} {{graduate.lastName}}
-        {{graduate.bio}}
-        
+        {{graduate.firstName}} {{graduate.lastName}}        
       {{/link-to}}
     </li>
   {{else}}
