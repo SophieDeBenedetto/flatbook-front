@@ -5,7 +5,7 @@ export function shortBio(params/*, hash*/) {
 }
 
 export default Ember.Handlebars.registerBoundHelper('shortBio', function(bio){
-  var theString = bio.substring(0,100);
-  return new Handlebars.SafeString(theString)
+  var theString = bio.substring(0,10);
+  return new Ember.Handlebars.SafeString(theString);
 });
 

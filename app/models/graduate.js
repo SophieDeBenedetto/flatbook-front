@@ -10,7 +10,7 @@ export default DS.Model.extend({
   website: DS.attr('string'),
   picture: DS.attr('string'),
   createdAt: DS.attr('date'),
-  updatedAt: DS.attr('date')
+  updatedAt: DS.attr('date'),
 });
 
 

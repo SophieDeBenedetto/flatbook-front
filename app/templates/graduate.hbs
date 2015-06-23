@@ -1,4 +1,17 @@
-dfgsfdg
 <img src="{{model.picture}}"/>
 <h1>{{model.firstName}} {{model.lastName}}</h1>
 <h4>{{model.currentJob}}</h4>
+<p id="bio">{{model.bio}}</p>
+<script>
+$(function(){
+	shortBio();
+});
+
+function shortBio(){
+		var bio = $("#bio").html();
+		var short = bio.substring(0,10);
+		$("#bio").replaceWith(short)
+}
+
+</script>
+
