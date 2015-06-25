@@ -1,11 +1,16 @@
-<h2>Flatbook</h2>
+<nav class="navbar navbar-default my-nav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    {{#link-to 'index' class="my-logo navbar-brand"}}<h2>// Flatbook</h2>{{/link-to}}
+    </div>
 
-<ul>
-  <li>{{link-to 'Home' 'index'}}</li>
-  <li>{{link-to 'Graduates' 'graduates'}}</li>
-</ul>
-
-<hr>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="my-nav-item">{{link-to '// Graduates' 'graduates'}}</li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
 {{outlet}}

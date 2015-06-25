@@ -1,7 +1,9 @@
  <div class="wrapper">
   <div class="row">
-      <div class="col-md-10 content blog">
-        <h1>Ruby 007</h1>
+    <div class="my-wrapper">
+      <div class="col-md-10 col-md-offset-1 content blog">
+      <div id="ruby-007"><h1>Ruby 007</h1></div>
+        
         {{#each graduate in model}}
           <div class="card film art">
             {{#link-to 'graduate' graduate class="thumb"}}
@@ -10,14 +12,20 @@
             {{/link-to}}
             <div class="card-body">
               {{#link-to 'graduate' graduate}}
-                <h2>{{graduate.firstName}} {{graduate.lastName}}</h2>
+                <h2 class="name">{{graduate.firstName}} {{graduate.lastName}}</h2>
               {{/link-to}}
               <p class="post-meta">{{graduate.cohort}}</p>
-              <p>{{short-bio graduate.bio}}</p>
+              <p>{{short-bio graduate.bio}}
+              <br>
+              {{#link-to 'graduate' graduate}}
+              Read More
+              {{/link-to}}
+              </p>
             </div><!-- end card-body -->
           </div><!-- end card -->
         {{/each}}
       </div><!-- end col -->
+    </div>
   </div><!-- end row -->
 </div><!-- end wrapper -->
 
