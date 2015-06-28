@@ -3,13 +3,13 @@
 module.exports = function(environment) {
   var ENV = {
      contentSecurityPolicy: {
-      'connect-src': "'self' http://localhost:3000",
-      'default-src': "'none' http://localhost:3000",
-      'script-src': "'self' http://localhost:3000",
-      'font-src': "'self' http://localhost:3000",
-      'img-src': "'self' http://localhost:3000",
-      'style-src': "'self' http://localhost:3000 'unsafe-inline",
-      'media-src': "'self' http://localhost:3000"
+      'connect-src': "'self' http://flatbook-api.herokuapp.com",
+      'default-src': "'none' http://flatbook-api.herokuapp.com",
+      'script-src': "'self' http://flatbook-api.herokuapp.com",
+      'font-src': "'self' http://flatbook-api.herokuapp.com",
+      'img-src': "'self' http://flatbook-api.herokuapp.com",
+      'style-src': "'self' http://flatbook-api.herokuapp.com 'unsafe-inline",
+      'media-src': "'self' http://flatbook-api.herokuapp.com"
     },
 
 

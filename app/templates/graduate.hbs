@@ -1,17 +1,29 @@
-<img src="{{model.picture}}"/>
-<h1>{{model.firstName}} {{model.lastName}}</h1>
-<h4>{{model.currentJob}}</h4>
-<p id="bio">{{model.bio}}</p>
-<script>
-$(function(){
-	shortBio();
-});
+ <div class="wrapper">
+      <div class="row">
+        <div class="col-md-offset-1 content blog post" style="margin-left: 0px">
+          <div class="page">
+            <article>
+              <div class="page-header" style="padding-bottom: 10px">
+                <img src="{{model.picture}}" />
+                <h1 style="margin-top: 1px; margin-bottom: 0px">{{model.firstName}} {{model.lastName}}</h1>
+              </div><!-- end page-header -->
+              <div class="post-content">
+                <p class="lead">{{model.currentJob}}</p>
+                <p>{{model.bio}}</p>
+              </div><!-- end post-content -->
+            </article>
+          </div><!-- end post -->
+        </div><!-- end col -->
+      </div><!-- end row -->
+    </div><!-- end wrapper -->
+    
+  
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/rebound.js"></script>
 
-function shortBio(){
-		var bio = $("#bio").html();
-		var short = bio.substring(0,10);
-		$("#bio").replaceWith(short)
-}
-
-</script>
 
