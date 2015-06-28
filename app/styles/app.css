@@ -1160,7 +1160,7 @@ dl:after {
 }
 .page {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 500px;
 }
 .page article {
   margin: 0 0 30px;
@@ -1218,6 +1218,7 @@ dl:after {
   border-color: #1abc9c;
 }
 .my-wrapper{
+  background-color: blue;
   margin-left: 5%;
 }
 
@@ -2365,7 +2366,7 @@ pre {
   FOOTER
 ****************************************************/
 footer {
-  margin: 0 45px 50px;
+  margin: 0 45px 3px;
   overflow: hidden;
 }
 footer p {
