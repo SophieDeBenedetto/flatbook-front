@@ -1299,6 +1299,7 @@ a.my-logo {
 }
 .card .card-body {
   padding: 10px 15px 15px;
+  height: 224px;
 }
 .card .card-body h2 {
   margin: 0 0 3px;
