@@ -9,6 +9,9 @@ export default DS.Model.extend({
   news: DS.attr('string'),
   website: DS.attr('string'),
   picture: DS.attr('string'),
+  linkedin: DS.attr('string'),
+  twitter: DS.attr('string'),
+  github: DS.attr('string'),
   createdAt: DS.attr('date'),
   updatedAt: DS.attr('date'),
 });
