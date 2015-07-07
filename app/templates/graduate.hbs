@@ -10,7 +10,20 @@
               <div class="post-content">
                 <p class="lead">{{model.currentJob}}</p>
                 <p>{{model.bio}}</p>
-                <p>{{model.github}}</p>
+                <p>
+                  <ul id="social-list">
+                     <li>
+                      <a href="{{model.github}}"><i class="fa fa-github fa-3x"></i></a>
+                     </li>
+                     <li>
+                      <a href="{{model.twitter}}"><i class="fa fa-twitter fa-3x"></i></a>
+                     </li>
+                     <li>
+                      <a href="{{model.linkedin}}"><i class="fa fa-linkedin fa-3x"></i></a>
+                     </li>
+                  </ul> 
+                </p>
+
               </div><!-- end post-content -->
             </article>
           </div><!-- end post -->

@@ -5,6 +5,8 @@
 @import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic');
 
 @import url('http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic');
+@import 'bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap';
+@import 'bower_components/fontawesome/scss/font-awesome';
 /***************************************************
   COLOURS
 ****************************************************/
@@ -45,6 +47,17 @@ body {
   font-family: 'PT Sans', Helvetica, Arial, ans-serif;
   background: url(../img/bg.jpg) 0 0 repeat #efefef;
   color: #555;
+}
+
+#social-list {
+  list-style-type: none;
+  padding-left: 30%;
+  padding-top: 5px;
+}
+
+#social-list li {
+  display: inline;
+  padding: 20px;
 }
 a {
   color: #1abc9c;
@@ -2596,6 +2609,7 @@ footer p {
     margin: -20px -20px 30px;
   }
 }
+
 
 .my-nav {
   height: 100px;
