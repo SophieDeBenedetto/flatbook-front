@@ -7,7 +7,7 @@
         {{#each graduate in model}}
           <div class="card film art">
             {{#link-to 'graduate' graduate class="thumb"}}
-              <img src="{{graduate.picture}}" alt="" title="" />
+              <img src="{{graduate.picture}}" class="grad-image" alt="" title="" />
               <span class="overlay"><span class="fa fa-search"></span></span>
             {{/link-to}}
             <div class="card-body">
@@ -15,13 +15,14 @@
                 <h2 class="name">{{graduate.firstName}} {{graduate.lastName}}</h2>
               {{/link-to}}
               <p class="post-meta">{{graduate.cohort}}</p>
-              <p>{{short-bio graduate.bio}}
-              <br>
+              <p>{{short-bio graduate.bio}}</p>
+            
+            </div><!-- end card-body -->
+            <div class="card-footer">
               {{#link-to 'graduate' graduate}}
               Read More
               {{/link-to}}
-              </p>
-            </div><!-- end card-body -->
+            </div> 
           </div><!-- end card -->
         {{/each}}
       </div><!-- end col -->

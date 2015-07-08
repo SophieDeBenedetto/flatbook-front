@@ -59,6 +59,14 @@ body {
   display: inline;
   padding: 20px;
 }
+
+.grad-image:hover img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
 a {
   color: #1abc9c;
 }
@@ -1254,6 +1262,7 @@ a.my-logo {
   font-weight: bolder;
 }
 .card {
+  overflow: hidden;
   margin: 10px 30px 30px 10px;
   width: 300px;
   display: block;
@@ -1271,8 +1280,11 @@ a.my-logo {
 .card .thumb {
   display: block;
   position: relative;
+  overflow: hidden;
 }
+
 .card .thumb img {
+  overflow: hidden;
   width: 100%;
   height: auto;
   position: relative;
@@ -1281,8 +1293,15 @@ a.my-logo {
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+
 }
-.card .thumb .overlay {
+/*.card .thumb .overlay {
   display: none;
   width: 100%;
   height: 100%;
@@ -1299,8 +1318,9 @@ a.my-logo {
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
-}
-.card .thumb .overlay .fa {
+
+}*/
+/*.card .thumb .overlay .fa {
   position: relative;
   top: 38%;
   font-size: 32px;
@@ -1309,7 +1329,22 @@ a.my-logo {
 }
 .card .thumb:hover .overlay {
   display: block;
+
 }
+*/
+.card .thumb img:hover {
+  overflow: hidden;
+  width: 350px;
+  /*background: #000;
+  filter: alpha(opacity=65);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  background: rgba(0, 0, 0, 0.65);
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;*/
+}
+
+
 .card .card-body {
   padding: 10px 15px 15px;
   height: 224px;
@@ -1317,7 +1352,6 @@ a.my-logo {
 .card .card-body h2 {
   margin: 0 0 3px;
   height: 30px;
-  overflow: hidden;
   font-size: 20px;
   line-height: 1.4;
 }
